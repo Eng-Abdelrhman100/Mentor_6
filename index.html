@@ -1,0 +1,228 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            stone_100:'#f3e6d8',
+            stone_150: '#e4ded8',
+            stone_600: '#5f574e',
+            stone_900: '#302d2c',
+            brown_800: '#854632',
+            rose_800: '#7b284f',
+            rose_50: '#fff5fa',
+          },
+          fontFamily: {
+            young: ['"Young Serif"', 'serif'],
+            outfit: ['"Outfit"', 'serif']
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  
+</head>
+<body class="flex justify-center items-center min-h-screen bg-stone_100 ">
+
+<main>
+  <div class="bg-white rounded-3xl p-[25px] flex flex-col container">
+    <img src="assets/images/image-omelette.jpeg"  width ="700" class="rounded-3xl mb-6">
+    <h1 class="font-young text-stone_900 text-[35px] text-left mb-3">Simple Omelette Recipe</h1>
+    <p class=" text-stone_600 ">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </p>
+  </div>
+</main> -->
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            stone_100:'#f3e6d8',
+            stone_150: '#e4ded8',
+            stone_600: '#5f574e',
+            stone_900: '#302d2c',
+            brown_800: '#854632',
+            rose_800: '#7b284f',
+            rose_50: '#fff5fa',
+          },
+          fontFamily: {
+            young: ['"Young Serif"', 'serif'],
+            outfit: ['"Outfit"', 'serif']
+          },
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
+    
+    
+    
+  </style>
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+</head>
+<body class="flex justify-center items-center min-h-screen bg-stone_100 ">
+
+<main class="w-full px-4 sm:px-6 lg:px-8">
+  <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col mx-auto max-w-2xl">
+    <img src="assets/images/image-omelette.jpeg" class="rounded-3xl mb-4 w-full object-cover">
+    <div class="flex flex-col justify-center">
+      <h1 class="font-young text-stone_900 text-2xl md:text-3xl lg:text-4xl text-left mb-2">Simple Omelette Recipe</h1>
+      <p class="text-stone_600 mb-5">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      </p>
+      <section class="w-full bg-rose_50 p-[25px] rounded-3xl mb-6">
+        <h2 class="text-rose_800 font-semibold text-[20px] font-outfit mb-2">Preparation time</h2>
+        <ul class="list-disc pl-5" >
+          <li><span class="ml-4 font-bold text-stone_600 font-outfit">Total:</span> Approximately 10 minutes</li>
+          <li><span class="ml-4 font-bold text-stone_600 font-outfit">Preparation:</span> 5 minutes</li>
+          <li><span class="ml-4 font-bold text-stone_600 font-outfit">Cooking:</span> 5 minutes</li>
+        </ul>
+      </section>
+      <section class="w-full mb-8">
+        <h2 class="text-brown_800 text-[25px] font-young text-2xl mb-4">Ingredients</h2>
+        <ul class="list-disc list-inside ml-2 text-stone_600 max-md:pl-4">
+          <li><span class="ml-4">2-3</span> large eggs</li>
+          <li><span class="ml-4">Salt</span>, to taste</li>
+          <li><span class="ml-4">Pepper</span>, to taste</li>
+          <li><span class="ml-4">1</span> tablespoon of butter or oil</li>
+          <li ><span class="ml-4 max-sm:mr-2"></span>Optional fillings: cheese, diced vegetables, cooked <br class="hidden max-sm:block"><span class="max-sm:ml-9"> meats, herbs</span></li>
+        </ul>
+        </section>
+        <hr class="border boder-stone_150 mb-8">
+        <section class="w-full mb-8">
+          <h2 class="text-brown_800 text-[25px] font-young text-2xl mb-4">Instructions</h2>
+          <ol class="list-decimal list-inside pl-6 text-stone_600 max-md:pl-4" type="1">
+            <li class="relative">
+              <span class="ml-4 font-bold text-stone_600 font-outfit text-base md:text-lg inline">Beat the eggs:</span>
+              <span class="text-sm md:text-base inline-block ml-8">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</span>
+            </li>
+            <li class="relative">
+              <span class="ml-4 font-bold text-stone_600 font-outfit text-base md:text-lg inline">Heat the pan:</span>
+              <span class="text-sm md:text-base inline-block ml-8">Place a non-stick frying pan over medium heat and add butter or oil.</span>
+            </li>
+            <li class="relative">
+              <span class="ml-4 font-bold text-stone_600 font-outfit text-base md:text-lg inline">Cook the omelette:</span>
+              <span class="text-sm md:text-base inline-block ml-8">Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</span>
+            </li>
+            <li class="relative">
+              <span class="ml-4 font-bold text-stone_600 font-outfit text-base md:text-lg inline">Add fillings (optional):</span>
+              <span class="text-sm md:text-base inline-block ml-8">When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</span>
+            </li>
+            <li class="relative">
+              <span class="ml-4 font-bold text-stone_600 font-outfit text-base md:text-lg inline">Fold and serve:</span>
+              <span class="text-sm md:text-base inline-block ml-8">As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</span>
+              
+            </li>
+          </ol>
+        </section>
+        <hr class="border boder-stone_150 mb-8">
+        <section class="w-full">
+          <h2 class="text-brown_800 text-[25px] font-young text-2xl mb-4">Nutritions</h2>
+          <p class="text-stone_600 mb-4">The table below shows nutritional values per serving without the additional fillings.</p>
+          <div class="overflow-x-auto">
+            <table class="min-w-full bg-white ">
+              
+              <tbody>
+                <tr class="border-b boder-stone_150">
+                  <td class="py-2 px-4 text-left text-stone_600">Calories</td>
+                  <td class="py-2 px-32 text-center"><span class="text-brown_800 font-bold">277kcal</span></td>
+                </tr>
+                <tr class="border-b boder-stone_150">
+                  <td class="py-2 px-4 text-left text-stone_600">Carbs</td>
+                  <td class="py-2 px-32 text-center"><span class="text-brown_800 font-bold mr-10">0g</span></td>
+                </tr>
+                <tr class="border-b boder-stone_150">
+                  <td class="py-2 px-4 text-left text-stone_600">Protein</td>
+                  <td class="py-2 px-32 text-center"><span class="text-brown_800 font-bold mr-8">20g</span></td>
+                </tr>
+                <tr>
+                  <td class="py-2 px-4 text-left text-stone_600">Fat</td>
+                  <td class="py-2 px-32 text-center"><span class="text-brown_800 font-bold mr-8">22g</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        
+
+        
+      
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
+
+
+
+  <!-- 
+
+ 
+
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+ -->
+  
+  
+</body>
+</html>
